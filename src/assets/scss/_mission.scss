@@ -1,0 +1,48 @@
+.mission {
+    padding: 125px 0 60px;
+    position: relative;
+    z-index: 1;
+    @include md {
+        padding: 80px 0 60px;
+    }
+    @include sm {
+        padding: 60px 0 50px;
+    }
+    &-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        & img {
+            max-width: 500px;
+            width: 100%;
+            @include xl {
+                max-width: 430px;
+            }
+            @include lg {
+                max-width: 300px;
+            }
+            @include md {
+                max-width: 250px;
+            }
+            @include sm {
+                max-width: 130px;
+            }
+        }
+    }
+    &-title {
+        & img {
+            max-width: 171px;
+            width: 100%;
+            @include sm {
+                max-width: 100px;
+            }
+        }
+    }
+    &-aeroplane {
+        & img {
+            max-width: 1252px;
+            width: 100%;
+        }
+    }
+}

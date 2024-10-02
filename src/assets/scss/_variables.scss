@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Super Bloom Personal Use';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/SuperBloomPersonalUse.woff2') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+$font-1:"Super Bloom Personal Use";
+$font-2:"Titan One",
+sans-serif;
+$white:#fff;
+$black:#000;
+$primary: #E60013;
+$secondary: #050505;
+$text:#FFFFFF;
+$heading: $white;
+$border:#4B4B4B;
+$bg:#E60013;
+:root {
+    scroll-behavior: auto !important;
+}

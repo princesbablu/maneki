@@ -1,0 +1,55 @@
+.about {
+    background-image: url('../img/about-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 147px 0 120px;
+    position: relative;
+    @include lg {
+        padding: 100px 0;
+    }
+    @include md {
+        padding: 80px 0;
+    }
+    @include sm {
+        padding: 60px 0;
+    }
+    &-title {
+        & img {
+            max-width: 1165px;
+            width: 100%;
+            @include sm {
+                width: 90%;
+            }
+        }
+    }
+    &-cartonbg {
+        & img {
+            max-width: 1506px;
+            width: 100%;
+        }
+    }
+    &-carton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        & img {
+            max-width: 647px;
+            width: 100%;
+            animation: topBottom 3s linear infinite;
+        }
+    }
+}
+
+@keyframes topBottom {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

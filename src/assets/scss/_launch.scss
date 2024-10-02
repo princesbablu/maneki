@@ -1,0 +1,84 @@
+.launch {
+    padding-top: 135px;
+    padding-bottom: 348px;
+    background-image: url(../img/launch-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include lg {
+        padding: 150px 0;
+    }
+    @include mmd {
+        padding: 120px 0;
+    }
+    @include sm {
+        padding: 100px 0;
+    }
+    @include ssm {
+        padding: 80px 0;
+    }
+    &-content {
+        margin-bottom: 60px;
+        @include lg {
+            margin-bottom: 50px;
+        }
+        @include mmd {
+            margin-bottom: 40px;
+        }
+        & h2 {
+            @include font-100;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            @include xl {
+                margin-bottom: 20px;
+            }
+            @include lg {
+                margin-bottom: 24px;
+            }
+            @include md {
+                margin-bottom: 24px;
+            }
+            @include sm {
+                margin-bottom: 16px;
+            }
+        }
+        & p {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: 0.56px;
+            @include xl {
+                font-size: 26px;
+            }
+            @include lg {
+                font-size: 24px;
+            }
+            @include mmd {
+                font-size: 22px;
+            }
+            @include sm {
+                font-size: 18px;
+            }
+        }
+    }
+    & .btn {
+        padding: 28.5px 87px;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        box-shadow: 0px 4px 8px 0px #000;
+        @include lg {
+            padding: 22.5px 75px;
+        }
+        @include mmd {
+            padding: 22.5px 75px;
+        }
+        @include sm {
+            padding: 18px 60px;
+            font-size: 26px;
+        }
+        &:hover {
+            box-shadow: 0 0 0;
+        }
+    }
+}

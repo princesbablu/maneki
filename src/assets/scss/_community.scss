@@ -1,0 +1,160 @@
+.community {
+    padding-top: 118px;
+    padding-bottom: 180px;
+    @include sm{
+        padding-bottom: 100px;
+        padding-top: 70px;
+    }
+    h2 {
+        color: $white;
+        @include font-100;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 180px;
+
+        @include mmd {
+            margin-bottom: 120px;
+        }
+
+        @include sm {
+            margin-bottom: 70px;
+        }
+    }
+
+    &-items {
+        display: inline-block;
+        @include sm {
+            padding-inline: 80px;
+        }
+        @media(max-width:576px) {
+            width: 392px;
+        }
+
+        .communitylrgimg {
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+            margin-inline: auto;
+            display: inline-block;
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('../img/cmnityimg-shap.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center center;
+                transform: scale(1.3);
+            }
+
+            img {
+                max-width: 575px;
+                width: 100%;
+            }
+
+        }
+
+        .cm-socials {
+            display: inline-block;
+            z-index: 9;
+            li {
+                position: absolute;
+                z-index: 2;
+
+                a {
+                    width: 90px;
+                    height: 90px;
+
+                    @include mmd {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    @include sm {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    img {
+                        --width: 40px;
+
+                        @include sm {
+                            --width: 25px;
+                        }
+                    }
+                }
+            }
+
+            li:nth-child(1) {
+                position: absolute;
+                left: -95px;
+                top: 95px;
+
+                @include mmd {
+                    left: -86px;
+                }
+
+                @include sm {
+                    left: 18px;
+                }                
+                @media(max-width:576px) {
+                    left: 28px;
+                    top: 50px;
+                }
+            }
+
+            li:nth-child(2) {
+                right: -29px;
+                bottom: 155px;
+                @include mmd{
+                    right: -15px;
+                }
+                @include sm{
+                    right: 60px;
+                }
+                             
+                @media(max-width:576px) {
+                    right: 65px;
+                    bottom: 55px;
+                }
+            }
+
+            li:nth-child(3) {
+                left: -38px;
+                bottom: 0px;
+                @include mmd{
+                    bottom: 20px;
+                }
+                @include sm{
+                    left: 50px;
+                }        
+                @media(max-width:576px) {
+                    left: 65px;
+                    bottom: -12px;
+                }
+            }
+
+            li:nth-child(4) {
+                right: 102px;
+                top: 0;
+                @include mmd{
+                    top: 16px;
+                }
+                @include sm{
+                    right: 130px;
+                    top: 12px;
+                }    
+                @media(max-width:576px) {
+                    right: 130px;
+                    top: -15px;
+                }
+            }
+        }
+    }
+}
